@@ -27,24 +27,21 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\SDL_mixer\external\libvorbis-1.3.3\lib\vorbisfile.c" />
+    <ClCompile Include="..\SDL_mixer\external\libogg-1.3.1\src\bitwise.c" />
+    <ClCompile Include="..\SDL_mixer\external\libogg-1.3.1\src\framing.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\SDL_mixer\external\libvorbis-1.3.3\include\vorbis\vorbisfile.h" />
+    <None Include="..\SDL_mixer\external\libogg-1.3.1\win32\ogg.def" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="libogg_dynamic-UWP.vcxproj">
-      <Project>{6bc6349c-e355-4f1c-9290-ff755114a84b}</Project>
-    </ProjectReference>
-    <ProjectReference Include="libvorbis_dynamic-UWP.vcxproj">
-      <Project>{e3ab27f1-eb89-4c65-85df-cb6a4f805753}</Project>
-    </ProjectReference>
+    <ClInclude Include="..\SDL_mixer\external\libogg-1.3.1\include\ogg\ogg.h" />
+    <ClInclude Include="..\SDL_mixer\external\libogg-1.3.1\include\ogg\os_types.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{936b2819-2364-45d9-901d-52878914fafa}</ProjectGuid>
+    <ProjectGuid>{6bc6349c-e355-4f1c-9290-ff755114a84b}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <ProjectName>libvorbisfile_dynamic-UWP</ProjectName>
-    <RootNamespace>libvorbisfile_dynamic_UWP</RootNamespace>
+    <ProjectName>libogg_static-UWP</ProjectName>
+    <RootNamespace>libogg_static_UWP</RootNamespace>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
@@ -55,34 +52,34 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <PlatformToolset>v140</PlatformToolset>
@@ -112,132 +109,132 @@
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>libvorbisfile</TargetName>
+    <TargetName>libogg</TargetName>
     <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>libvorbisfile</TargetName>
+    <TargetName>libogg</TargetName>
     <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>libvorbisfile</TargetName>
+    <TargetName>libogg</TargetName>
     <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>libvorbisfile</TargetName>
+    <TargetName>libogg</TargetName>
     <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>libvorbisfile</TargetName>
+    <TargetName>libogg</TargetName>
     <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
     <IntDir>$(SolutionDir)Objs\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>libvorbisfile</TargetName>
+    <TargetName>libogg</TargetName>
     <OutDir>$(SolutionDir)Output\$(ProjectName)\$(Platform)\$(Configuration)\$(MSBuildProjectName)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\SDL_mixer\external\libvorbis-1.3.3\include;..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4244;4101</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBOGG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <ModuleDefinitionFile>..\SDL_mixer\external\libvorbis-1.3.3\win32\vorbisfile.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>..\SDL_mixer\external\libogg-1.3.1\win32\ogg.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\SDL_mixer\external\libvorbis-1.3.3\include;..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4244;4101</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBOGG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <ModuleDefinitionFile>..\SDL_mixer\external\libvorbis-1.3.3\win32\vorbisfile.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>..\SDL_mixer\external\libogg-1.3.1\win32\ogg.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\SDL_mixer\external\libvorbis-1.3.3\include;..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WIN32_WCE;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4244;4101</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBOGG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <ModuleDefinitionFile>..\SDL_mixer\external\libvorbis-1.3.3\win32\vorbisfile.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>..\SDL_mixer\external\libogg-1.3.1\win32\ogg.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\SDL_mixer\external\libvorbis-1.3.3\include;..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WIN32_WCE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4244;4101</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBOGG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <ModuleDefinitionFile>..\SDL_mixer\external\libvorbis-1.3.3\win32\vorbisfile.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>..\SDL_mixer\external\libogg-1.3.1\win32\ogg.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\SDL_mixer\external\libvorbis-1.3.3\include;..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4244;4101</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBOGG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <ModuleDefinitionFile>..\SDL_mixer\external\libvorbis-1.3.3\win32\vorbisfile.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>..\SDL_mixer\external\libogg-1.3.1\win32\ogg.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>..\SDL_mixer\external\libvorbis-1.3.3\include;..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <DisableSpecificWarnings>4244;4101</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..\SDL_mixer\external\libogg-1.3.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;LIBOGG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <ModuleDefinitionFile>..\SDL_mixer\external\libvorbis-1.3.3\win32\vorbisfile.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>..\SDL_mixer\external\libogg-1.3.1\win32\ogg.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
